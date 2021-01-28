@@ -26,9 +26,6 @@ const Navbar = () => {
     const MenuItem = styled.li`
         list-style-type: none;
         text-decoration: none;
-        &hover: {
-            color: white;
-        }
     `;
 
     const SearchForm = styled.form`
@@ -70,6 +67,7 @@ const Navbar = () => {
 
     const StyledLink = styled(Link)`
         text-decoration: none;
+        color: black;
         &:hover {
             color: white;
         }

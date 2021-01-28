@@ -1,4 +1,5 @@
 export const GET_TRENDING = 'GET_TRENDING';
+export const TRENDING_ERROR = 'TRENDING_ERROR'
 export const GET_RESULTS = 'GET_RESULTS';
 export const GET_CATEGORIES = 'GET_CATEGORIES';
 
