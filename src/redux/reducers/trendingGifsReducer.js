@@ -1,6 +1,6 @@
 const initialState = {
     trending: [],
-    loading: true,
+    loading: false,
     error: null
 }
 
@@ -8,18 +8,20 @@ const getTrendingReducer = (state = initialState, action) => {
     switch (action.type) {
         case 'GET_TRENDING':
             return {
-                trending: [...state, ...action.payload],
-                loading: false,
+                trending: [...action.payload.data, ...state.trending],
+                loading: true,
                 error: null
             }
         case 'TRENDING_ERROR': {
             return {
-                ...state,
-                loading: false,
-                error: action.payload.error
+                trending: state.trending,
+                loading: true,
+                error: action.payload
             }
         }
         default:
             return state;
     }
-} 
+}
+
+export default getTrendingReducer;

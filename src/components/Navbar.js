@@ -73,7 +73,7 @@ const Navbar = () => {
         }
     `;
 
-    const StyledFontawesomeIcon = styled(FontAwesomeIcon)`
+    const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
         color: gray;
         &:hover {
             color: black;
@@ -92,7 +92,7 @@ const Navbar = () => {
                 </Menu>
                 <SearchForm>
                     <SearchInputField placeholder='Search gifs'></SearchInputField>
-                    <Button><StyledFontawesomeIcon icon={faSearch}/></Button>
+                    <Button><StyledFontAwesomeIcon icon={faSearch}/></Button>
                 </SearchForm>
             </Navbar>
         </>
