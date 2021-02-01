@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import React from "react";
 
 const SingleGifView = ({ imageSource, imageLoaded}) => {
 
@@ -17,4 +18,4 @@ const SingleGifView = ({ imageSource, imageLoaded}) => {
     )
 }
 
-export default SingleGifView;
+export default React.memo(SingleGifView);

@@ -1,7 +1,7 @@
 import styled, { keyframes, css } from 'styled-components';
 
 const Loader = ({ visible }) => {
-    console.log(visible);
+
     const LoadingAnimation = keyframes`  
         from {transform: rotate(0deg)}
         to {transform: rotate(360deg)}

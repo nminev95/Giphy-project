@@ -5,10 +5,11 @@ const initialState = {
 }
 
 const getTrendingReducer = (state = initialState, action) => {
+    console.log(action.payload)
     switch (action.type) {
         case 'GET_TRENDING':
             return {
-                trending: [...action.payload.data, ...state.trending],
+                trending: action.payload.data,
                 loading: true,
                 error: null
             }
